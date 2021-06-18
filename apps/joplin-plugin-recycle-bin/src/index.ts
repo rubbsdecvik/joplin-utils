@@ -80,9 +80,9 @@ joplin.plugins.register({
               }
             },
           )
+          joplin.views.panels.addScript(panelId, 'webview.js')
         }
 
-        joplin.views.panels.addScript(panelId, 'webview.js')
         joplin.views.panels.show(
           panelId,
           !(await joplin.views.panels.visible(panelId)),

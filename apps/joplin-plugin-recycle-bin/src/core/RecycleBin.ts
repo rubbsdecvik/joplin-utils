@@ -1,7 +1,7 @@
 import { mkdirp, pathExists, readJSON, writeJSON } from 'fs-extra'
 import * as path from 'path'
 
-interface RecycleBinNote {
+export interface RecycleBinNote {
   id: string
   title: string
   content: string
@@ -32,10 +32,13 @@ export class RecycleBin {
    */
   async remove(id: string) {
     const list: RecycleBinNote[] = await this.list()
-    await writeJSON(
-      this.filePath,
-      list.filter((note) => note.id !== id),
-    )
+    const removeIndex = list.findIndex((note) => note.id === id)
+    if (removeIndex === -1) {
+      throw new Error('回收站没有找到该笔记')
+    }
+    const [res] = list.splice(removeIndex, 1)
+    await writeJSON(this.filePath, list)
+    return res
   }
 
   /**

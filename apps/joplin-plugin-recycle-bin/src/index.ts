@@ -55,11 +55,38 @@ joplin.plugins.register({
 
     //region 查看回收站
 
+    let panelId: string
     joplin.commands.register({
       name: 'recycle-bin-view',
       label: '查看回收站',
-      execute() {
+      async execute() {
         console.log('查看回收站')
+        if (panelId === undefined) {
+          panelId = await joplin.views.panels.create('recycle-bin-view-dialog')
+          joplin.views.panels.onMessage(
+            panelId,
+            async (
+              action: { type: 'list' } | { type: 'revert'; args: [id: string] },
+            ) => {
+              switch (action.type) {
+                case 'list':
+                  return await recycleBin.list()
+                case 'revert':
+                  const res = await recycleBin.remove(action.args[0])
+                  const note = JSON.parse(res.content)
+                  console.log('revert: ', res.title, note)
+                  await joplin.data.post(['notes'], null, note)
+                  break
+              }
+            },
+          )
+        }
+
+        joplin.views.panels.addScript(panelId, 'webview.js')
+        joplin.views.panels.show(
+          panelId,
+          !(await joplin.views.panels.visible(panelId)),
+        )
       },
     } as Command)
     joplin.views.menuItems.create(

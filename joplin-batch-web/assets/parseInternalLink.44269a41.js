@@ -1,0 +1,1 @@
+import{e as t,c as e}from"./vendor.c3e07762.js";import{m as r}from"./mdParser.e006ccfc.js";t((function(t){const i=[];return e(r.parse(t),(t=>{var e;if("link"!==t.type&&"image"!==t.type)return;const r=t;r.url.startsWith(":/")&&i.push({id:r.url.slice(2),title:"link"===r.type?null!=(e=r.title)?e:r.children[0].value:r.alt})})),i}));

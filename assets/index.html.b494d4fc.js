@@ -1,0 +1,1 @@
+const e={key:"v-201e9d12",path:"/zh/joplin-vscode-plugin/other/",title:"为什么要开发这个插件",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],filePathRelative:"zh/joplin-vscode-plugin/other/README.md",git:{updatedTime:1630688692e3,contributors:[{name:"rxliuli",email:"rxliuli@gmail.com",commits:1}]}};export{e as data};

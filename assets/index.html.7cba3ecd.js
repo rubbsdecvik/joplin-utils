@@ -1,0 +1,1 @@
+const e={key:"v-184d7906",path:"/joplin-vscode-plugin/other/",title:"Why write this plugin for vscode",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"joplin-vscode-plugin/other/README.md",git:{updatedTime:1630688692e3,contributors:[{name:"rxliuli",email:"rxliuli@gmail.com",commits:1}]}};export{e as data};

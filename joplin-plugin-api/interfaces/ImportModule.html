@@ -1,0 +1,376 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ImportModule | joplin-plugin-api</title>
+	<meta name="description" content="Documentation for joplin-plugin-api">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">joplin-plugin-api</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">joplin-plugin-api</a>
+				</li>
+				<li>
+					<a href="ImportModule.html">ImportModule</a>
+				</li>
+			</ul>
+			<h1>Interface ImportModule</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">ImportModule</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ImportModule.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ImportModule.html#fileExtensions" class="tsd-kind-icon">file<wbr>Extensions</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ImportModule.html#format" class="tsd-kind-icon">format</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ImportModule.html#isNoteArchive" class="tsd-kind-icon">is<wbr>Note<wbr>Archive</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ImportModule.html#outputFormat" class="tsd-kind-icon">output<wbr>Format</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ImportModule.html#sources" class="tsd-kind-icon">sources</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="ImportModule.html#onExec" class="tsd-kind-icon">on<wbr>Exec</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="description" class="tsd-anchor"></a>
+					<h3>description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/rxliuli/joplin-utils/blob/24b8159/libs/joplin-plugin-api/src/api/types.ts#L146">api/types.ts:146</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The description that will appear in the UI, for example in the menu item.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="fileExtensions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> file<wbr>Extensions</h3>
+					<div class="tsd-signature tsd-kind-icon">file<wbr>Extensions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/rxliuli/joplin-utils/blob/24b8159/libs/joplin-plugin-api/src/api/types.ts#L163">api/types.ts:163</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Tells the file extensions of the exported files.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="format" class="tsd-anchor"></a>
+					<h3>format</h3>
+					<div class="tsd-signature tsd-kind-icon">format<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/rxliuli/joplin-utils/blob/24b8159/libs/joplin-plugin-api/src/api/types.ts#L141">api/types.ts:141</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The format to be exported, eg &quot;enex&quot;, &quot;jex&quot;, &quot;json&quot;, etc.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="isNoteArchive" class="tsd-anchor"></a>
+					<h3>is<wbr>Note<wbr>Archive</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Note<wbr>Archive<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/rxliuli/joplin-utils/blob/24b8159/libs/joplin-plugin-api/src/api/types.ts#L153">api/types.ts:153</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Only applies to single file exporters or importers
+								It tells whether the format can package multiple notes into one file.
+							For example JEX or ENEX can, but HTML cannot.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="outputFormat" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> output<wbr>Format</h3>
+					<div class="tsd-signature tsd-kind-icon">output<wbr>Format<span class="tsd-signature-symbol">:</span> <a href="../enums/ImportModuleOutputFormat.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ImportModuleOutputFormat</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/rxliuli/joplin-utils/blob/24b8159/libs/joplin-plugin-api/src/api/types.ts#L168">api/types.ts:168</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Tells the type of notes that will be generated, either HTML or Markdown (default).</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="sources" class="tsd-anchor"></a>
+					<h3>sources</h3>
+					<div class="tsd-signature tsd-kind-icon">sources<span class="tsd-signature-symbol">:</span> <a href="../enums/FileSystemItem.html" class="tsd-signature-type" data-tsd-kind="Enumeration">FileSystemItem</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/rxliuli/joplin-utils/blob/24b8159/libs/joplin-plugin-api/src/api/types.ts#L158">api/types.ts:158</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The type of sources that are supported by the module. Tells whether the module can import files or directories or both.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="onExec" class="tsd-anchor"></a>
+					<h3>on<wbr>Exec</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Exec<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="ImportContext.html" class="tsd-signature-type" data-tsd-kind="Interface">ImportContext</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/rxliuli/joplin-utils/blob/24b8159/libs/joplin-plugin-api/src/api/types.ts#L173">api/types.ts:173</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Called when the import process starts. There is only one event handler within which you should import the complete data.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>context: <a href="ImportContext.html" class="tsd-signature-type" data-tsd-kind="Interface">ImportContext</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="../enums/AppType.html" class="tsd-kind-icon">App<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/ContentScriptType.html" class="tsd-kind-icon">Content<wbr>Script<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/FileSystemItem.html" class="tsd-kind-icon">File<wbr>System<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/ImportModuleOutputFormat.html" class="tsd-kind-icon">Import<wbr>Module<wbr>Output<wbr>Format</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/MenuItemLocation.html" class="tsd-kind-icon">Menu<wbr>Item<wbr>Location</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/SettingItemType.html" class="tsd-kind-icon">Setting<wbr>Item<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/SettingStorage.html" class="tsd-kind-icon">Setting<wbr>Storage</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/ToolbarButtonLocation.html" class="tsd-kind-icon">Toolbar<wbr>Button<wbr>Location</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ButtonSpec.html" class="tsd-kind-icon">Button<wbr>Spec</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="Command.html" class="tsd-kind-icon">Command</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ContentScriptContext.html" class="tsd-kind-icon">Content<wbr>Script<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="CreateMenuItemOptions.html" class="tsd-kind-icon">Create<wbr>Menu<wbr>Item<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="DialogResult.html" class="tsd-kind-icon">Dialog<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="Disposable.html" class="tsd-kind-icon">Disposable</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="EditorCommand.html" class="tsd-kind-icon">Editor<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ExportContext.html" class="tsd-kind-icon">Export<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ExportModule.html" class="tsd-kind-icon">Export<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ExportOptions.html" class="tsd-kind-icon">Export<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ImportContext.html" class="tsd-kind-icon">Import<wbr>Context</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
+						<a href="ImportModule.html" class="tsd-kind-icon">Import<wbr>Module</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ImportModule.html#description" class="tsd-kind-icon">description</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ImportModule.html#fileExtensions" class="tsd-kind-icon">file<wbr>Extensions</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ImportModule.html#format" class="tsd-kind-icon">format</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ImportModule.html#isNoteArchive" class="tsd-kind-icon">is<wbr>Note<wbr>Archive</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ImportModule.html#outputFormat" class="tsd-kind-icon">output<wbr>Format</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ImportModule.html#sources" class="tsd-kind-icon">sources</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="ImportModule.html#onExec" class="tsd-kind-icon">on<wbr>Exec</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface">
+						<a href="MenuItem.html" class="tsd-kind-icon">Menu<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="Script.html" class="tsd-kind-icon">Script</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="SettingItem.html" class="tsd-kind-icon">Setting<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="SettingSection.html" class="tsd-kind-icon">Setting<wbr>Section</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../modules.html#ButtonId" class="tsd-kind-icon">Button<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../modules.html#Path" class="tsd-kind-icon">Path</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../modules.html#PostMessageHandler" class="tsd-kind-icon">Post<wbr>Message<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../modules.html#ViewHandle" class="tsd-kind-icon">View<wbr>Handle</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../modules.html#default" class="tsd-kind-icon">default</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../modules.html#isContextMenuItemLocation" class="tsd-kind-icon">is<wbr>Context<wbr>Menu<wbr>Item<wbr>Location</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

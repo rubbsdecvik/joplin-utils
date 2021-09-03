@@ -1,0 +1,397 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ContentScriptType | joplin-plugin-api</title>
+	<meta name="description" content="Documentation for joplin-plugin-api">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">joplin-plugin-api</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">joplin-plugin-api</a>
+				</li>
+				<li>
+					<a href="ContentScriptType.html">ContentScriptType</a>
+				</li>
+			</ul>
+			<h1>Enumeration ContentScriptType</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Enumeration members</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="ContentScriptType.html#CodeMirrorPlugin" class="tsd-kind-icon">Code<wbr>Mirror<wbr>Plugin</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="ContentScriptType.html#MarkdownItPlugin" class="tsd-kind-icon">Markdown<wbr>ItPlugin</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Enumeration members</h2>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="CodeMirrorPlugin" class="tsd-anchor"></a>
+					<h3>Code<wbr>Mirror<wbr>Plugin</h3>
+					<div class="tsd-signature tsd-kind-icon">Code<wbr>Mirror<wbr>Plugin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;codeMirrorPlugin&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/rxliuli/joplin-utils/blob/24b8159/libs/joplin-plugin-api/src/api/types.ts#L639">api/types.ts:639</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Registers a new CodeMirror plugin, which should follow the template
+							below.</p>
+						</div>
+						<pre><code class="language-javascript"><span style="color: #267F99">module</span><span style="color: #000000">.</span><span style="color: #267F99">exports</span><span style="color: #000000"> = {</span>
+<span style="color: #000000">    </span><span style="color: #795E26">default</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000">(</span><span style="color: #001080">context</span><span style="color: #000000">) {</span>
+<span style="color: #000000">        </span><span style="color: #AF00DB">return</span><span style="color: #000000"> {</span>
+<span style="color: #000000">            </span><span style="color: #795E26">plugin</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000">(</span><span style="color: #001080">CodeMirror</span><span style="color: #000000">) {</span>
+<span style="color: #000000">                </span><span style="color: #008000">// ...</span>
+<span style="color: #000000">            },</span>
+<span style="color: #000000">            </span><span style="color: #001080">codeMirrorResources:</span><span style="color: #000000"> [],</span>
+<span style="color: #000000">            </span><span style="color: #001080">codeMirrorOptions:</span><span style="color: #000000"> {</span>
+<span style="color: #000000">                                 </span><span style="color: #008000">// ...</span>
+<span style="color: #000000">                      },</span>
+<span style="color: #000000">            </span><span style="color: #001080">assets:</span><span style="color: #000000"> {</span>
+<span style="color: #000000">                </span><span style="color: #008000">// ...</span>
+<span style="color: #000000">            },</span>
+<span style="color: #000000">        }</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">}</span>
+</code></pre>
+						<ul>
+							<li><p>The <code>context</code> argument is currently unused but could be used later on
+									to provide access to your own plugin so that the content script and
+								plugin can communicate.</p>
+							</li>
+							<li><p>The <code>plugin</code> key is your CodeMirror plugin. This is where you can
+									register new commands with CodeMirror or interact with the CodeMirror
+								instance as needed.</p>
+							</li>
+							<li><p>The <code>codeMirrorResources</code> key is an array of CodeMirror resources that
+									will be loaded and attached to the CodeMirror module. These are made up
+									of addons, keymaps, and modes. For example, for a plugin that want&#39;s to
+									enable clojure highlighting in code blocks. <code>codeMirrorResources</code> would
+								be set to <code>[&#39;mode/clojure/clojure&#39;]</code>.</p>
+							</li>
+							<li><p>The <code>codeMirrorOptions</code> key contains all the
+									<a href="https://codemirror.net/doc/manual.html#config">CodeMirror</a> options
+									that will be set or changed by this plugin. New options can alse be
+									declared via
+									<a href="https://codemirror.net/doc/manual.html#defineOption"><code>CodeMirror.defineOption</code></a>,
+									and then have their value set here. For example, a plugin that enables
+								line numbers would set <code>codeMirrorOptions</code> to <code>{&#39;lineNumbers&#39;: true}</code>.</p>
+							</li>
+							<li><p>Using the <strong>optional</strong> <code>assets</code> key you may specify <strong>only</strong> CSS assets
+									that should be loaded in the rendered HTML document. Check for example
+									the Joplin <a href="https://github.com/laurent22/joplin/blob/dev/packages/renderer/MdToHtml/rules/mermaid.ts">Mermaid
+									plugin</a>
+								to see how the data should be structured.</p>
+							</li>
+						</ul>
+						<p>One of the <code>plugin</code>, <code>codeMirrorResources</code>, or <code>codeMirrorOptions</code> keys
+							must be provided for the plugin to be valid. Having multiple or all
+						provided is also okay.</p>
+						<p>See also the <a href="https://github.com/laurent22/joplin/tree/dev/packages/app-cli/tests/support/plugins/codemirror_content_script">demo
+							plugin</a>
+						for an example of all these keys being used in one plugin.</p>
+						<a href="#posting-messages-from-the-content-script-to-your-plugin" id="posting-messages-from-the-content-script-to-your-plugin" style="color: inherit; text-decoration: none;">
+							<h2>Posting messages from the content script to your plugin</h2>
+						</a>
+						<p>In order to post messages to the plugin, you can use the postMessage
+						function passed to the <a href="../interfaces/ContentScriptContext.html">context</a>.</p>
+						<pre><code class="language-javascript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">response</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">context</span><span style="color: #000000">.</span><span style="color: #795E26">postMessage</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;messageFromCodeMirrorContentScript&#039;</span><span style="color: #000000">);</span>
+</code></pre>
+						<p>When you post a message, the plugin can send back a <code>response</code> thus
+						allowing two-way communication:</p>
+						<pre><code class="language-javascript"><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">joplin</span><span style="color: #000000">.</span><span style="color: #001080">contentScripts</span><span style="color: #000000">.</span><span style="color: #795E26">onMessage</span><span style="color: #000000">(</span><span style="color: #001080">contentScriptId</span><span style="color: #000000">, (</span><span style="color: #001080">message</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #008000">// Process message</span>
+<span style="color: #000000">    </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #001080">response</span><span style="color: #000000">; </span><span style="color: #008000">// Can be any object, string or number</span>
+<span style="color: #000000">});</span>
+</code></pre>
+						<p>See {@link JoplinContentScripts.onMessage} for more details, as well as
+							the <a href="https://github.com/laurent22/joplin/tree/dev/packages/app-cli/tests/support/plugins/post_messages">postMessage
+						demo</a>.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="MarkdownItPlugin" class="tsd-anchor"></a>
+					<h3>Markdown<wbr>ItPlugin</h3>
+					<div class="tsd-signature tsd-kind-icon">Markdown<wbr>ItPlugin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = &quot;markdownItPlugin&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/rxliuli/joplin-utils/blob/24b8159/libs/joplin-plugin-api/src/api/types.ts#L554">api/types.ts:554</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Registers a new Markdown-It plugin, which should follow the template
+							below.</p>
+						</div>
+						<pre><code class="language-javascript"><span style="color: #267F99">module</span><span style="color: #000000">.</span><span style="color: #267F99">exports</span><span style="color: #000000"> = {</span>
+<span style="color: #000000">    </span><span style="color: #795E26">default</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000">(</span><span style="color: #001080">context</span><span style="color: #000000">) {</span>
+<span style="color: #000000">        </span><span style="color: #AF00DB">return</span><span style="color: #000000"> {</span>
+<span style="color: #000000">            </span><span style="color: #795E26">plugin</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000">(</span><span style="color: #001080">markdownIt</span><span style="color: #000000">, </span><span style="color: #001080">options</span><span style="color: #000000">) {</span>
+<span style="color: #000000">                </span><span style="color: #008000">// ...</span>
+<span style="color: #000000">            },</span>
+<span style="color: #000000">            </span><span style="color: #001080">assets:</span><span style="color: #000000"> {</span>
+<span style="color: #000000">                </span><span style="color: #008000">// ...</span>
+<span style="color: #000000">            },</span>
+<span style="color: #000000">        }</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">}</span>
+</code></pre>
+						<p>See <a href="https://github.com/laurent22/joplin/tree/dev/packages/app-cli/tests/support/plugins/content_script">the
+							demo</a>
+						for a simple Markdown-it plugin example.</p>
+						<a href="#exported-members" id="exported-members" style="color: inherit; text-decoration: none;">
+							<h2>Exported members</h2>
+						</a>
+						<ul>
+							<li><p>The <code>context</code> argument is currently unused but could be used later on
+									to provide access to your own plugin so that the content script and
+								plugin can communicate.</p>
+							</li>
+							<li><p>The <strong>required</strong> <code>plugin</code> key is the actual Markdown-It plugin - check
+									the <a href="https://github.com/markdown-it/markdown-it">official doc</a> for more
+									information. The <code>options</code> parameter is of type
+									<a href="https://github.com/laurent22/joplin/blob/dev/packages/renderer/MdToHtml.ts">RuleOptions</a>,
+									which contains a number of options, mostly useful for Joplin&#39;s internal
+								code.</p>
+							</li>
+							<li><p>Using the <strong>optional</strong> <code>assets</code> key you may specify assets such as JS
+									or CSS that should be loaded in the rendered HTML document. Check for
+									example the Joplin <a href="https://github.com/laurent22/joplin/blob/dev/packages/renderer/MdToHtml/rules/mermaid.ts">Mermaid
+									plugin</a>
+								to see how the data should be structured.</p>
+							</li>
+						</ul>
+						<a href="#posting-messages-from-the-content-script-to-your-plugin" id="posting-messages-from-the-content-script-to-your-plugin" style="color: inherit; text-decoration: none;">
+							<h2>Posting messages from the content script to your plugin</h2>
+						</a>
+						<p>The application provides the following function to allow executing
+						commands from the rendered HTML code:</p>
+						<pre><code class="language-javascript"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">response</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">webviewApi</span><span style="color: #000000">.</span><span style="color: #795E26">postMessage</span><span style="color: #000000">(</span><span style="color: #001080">contentScriptId</span><span style="color: #000000">, </span><span style="color: #001080">message</span><span style="color: #000000">);</span>
+</code></pre>
+						<ul>
+							<li><code>contentScriptId</code> is the ID you&#39;ve defined when you registered the
+								content script. You can retrieve it from the
+							<a href="../interfaces/ContentScriptContext.html">context</a>.</li>
+							<li><code>message</code> can be any basic JavaScript type (number, string, plain
+							object), but it cannot be a function or class instance.</li>
+						</ul>
+						<p>When you post a message, the plugin can send back a <code>response</code> thus
+						allowing two-way communication:</p>
+						<pre><code class="language-javascript"><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">joplin</span><span style="color: #000000">.</span><span style="color: #001080">contentScripts</span><span style="color: #000000">.</span><span style="color: #795E26">onMessage</span><span style="color: #000000">(</span><span style="color: #001080">contentScriptId</span><span style="color: #000000">, (</span><span style="color: #001080">message</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #008000">// Process message</span>
+<span style="color: #000000">    </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #001080">response</span><span style="color: #000000">; </span><span style="color: #008000">// Can be any object, string or number</span>
+<span style="color: #000000">});</span>
+</code></pre>
+						<p>See {@link JoplinContentScripts.onMessage} for more details, as well as
+							the <a href="https://github.com/laurent22/joplin/tree/dev/packages/app-cli/tests/support/plugins/post_messages">postMessage
+						demo</a>.</p>
+						<a href="#registering-an-existing-markdown-it-plugin" id="registering-an-existing-markdown-it-plugin" style="color: inherit; text-decoration: none;">
+							<h2>Registering an existing Markdown-it plugin</h2>
+						</a>
+						<p>To include a regular Markdown-It plugin, that doesn&#39;t make use of any
+						Joplin-specific features, you would simply create a file such as this:</p>
+						<pre><code class="language-javascript"><span style="color: #267F99">module</span><span style="color: #000000">.</span><span style="color: #267F99">exports</span><span style="color: #000000"> = {</span>
+<span style="color: #000000">    </span><span style="color: #795E26">default</span><span style="color: #001080">:</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000">(</span><span style="color: #001080">context</span><span style="color: #000000">) {</span>
+<span style="color: #000000">        </span><span style="color: #AF00DB">return</span><span style="color: #000000"> {</span>
+<span style="color: #000000">            </span><span style="color: #001080">plugin:</span><span style="color: #000000"> </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;markdown-it-toc-done-right&#039;</span><span style="color: #000000">);</span>
+<span style="color: #000000">        }</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">}</span>
+</code></pre>
+					</div>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="AppType.html" class="tsd-kind-icon">App<wbr>Type</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-enum">
+						<a href="ContentScriptType.html" class="tsd-kind-icon">Content<wbr>Script<wbr>Type</a>
+						<ul>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="ContentScriptType.html#CodeMirrorPlugin" class="tsd-kind-icon">Code<wbr>Mirror<wbr>Plugin</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="ContentScriptType.html#MarkdownItPlugin" class="tsd-kind-icon">Markdown<wbr>ItPlugin</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-enum">
+						<a href="FileSystemItem.html" class="tsd-kind-icon">File<wbr>System<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="ImportModuleOutputFormat.html" class="tsd-kind-icon">Import<wbr>Module<wbr>Output<wbr>Format</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="MenuItemLocation.html" class="tsd-kind-icon">Menu<wbr>Item<wbr>Location</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="SettingItemType.html" class="tsd-kind-icon">Setting<wbr>Item<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="SettingStorage.html" class="tsd-kind-icon">Setting<wbr>Storage</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="ToolbarButtonLocation.html" class="tsd-kind-icon">Toolbar<wbr>Button<wbr>Location</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ButtonSpec.html" class="tsd-kind-icon">Button<wbr>Spec</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/Command.html" class="tsd-kind-icon">Command</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ContentScriptContext.html" class="tsd-kind-icon">Content<wbr>Script<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/CreateMenuItemOptions.html" class="tsd-kind-icon">Create<wbr>Menu<wbr>Item<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/DialogResult.html" class="tsd-kind-icon">Dialog<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/Disposable.html" class="tsd-kind-icon">Disposable</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/EditorCommand.html" class="tsd-kind-icon">Editor<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ExportContext.html" class="tsd-kind-icon">Export<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ExportModule.html" class="tsd-kind-icon">Export<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ExportOptions.html" class="tsd-kind-icon">Export<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ImportContext.html" class="tsd-kind-icon">Import<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ImportModule.html" class="tsd-kind-icon">Import<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/MenuItem.html" class="tsd-kind-icon">Menu<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/Script.html" class="tsd-kind-icon">Script</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/SettingItem.html" class="tsd-kind-icon">Setting<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/SettingSection.html" class="tsd-kind-icon">Setting<wbr>Section</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../modules.html#ButtonId" class="tsd-kind-icon">Button<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../modules.html#Path" class="tsd-kind-icon">Path</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../modules.html#PostMessageHandler" class="tsd-kind-icon">Post<wbr>Message<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../modules.html#ViewHandle" class="tsd-kind-icon">View<wbr>Handle</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../modules.html#default" class="tsd-kind-icon">default</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../modules.html#isContextMenuItemLocation" class="tsd-kind-icon">is<wbr>Context<wbr>Menu<wbr>Item<wbr>Location</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

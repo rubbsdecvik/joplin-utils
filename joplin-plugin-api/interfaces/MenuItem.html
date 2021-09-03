@@ -1,0 +1,297 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MenuItem | joplin-plugin-api</title>
+	<meta name="description" content="Documentation for joplin-plugin-api">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">joplin-plugin-api</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">joplin-plugin-api</a>
+				</li>
+				<li>
+					<a href="MenuItem.html">MenuItem</a>
+				</li>
+			</ul>
+			<h1>Interface MenuItem</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">MenuItem</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="MenuItem.html#accelerator" class="tsd-kind-icon">accelerator</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="MenuItem.html#commandName" class="tsd-kind-icon">command<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="MenuItem.html#label" class="tsd-kind-icon">label</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="MenuItem.html#submenu" class="tsd-kind-icon">submenu</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="accelerator" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> accelerator</h3>
+					<div class="tsd-signature tsd-kind-icon">accelerator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/rxliuli/joplin-utils/blob/24b8159/libs/joplin-plugin-api/src/api/types.ts#L283">api/types.ts:283</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Accelerator associated with the menu item</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="commandName" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> command<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">command<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/rxliuli/joplin-utils/blob/24b8159/libs/joplin-plugin-api/src/api/types.ts#L278">api/types.ts:278</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Command that should be associated with the menu item. All menu item should
+							have a command associated with them unless they are a sub-menu.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="label" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> label</h3>
+					<div class="tsd-signature tsd-kind-icon">label<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/rxliuli/joplin-utils/blob/24b8159/libs/joplin-plugin-api/src/api/types.ts#L293">api/types.ts:293</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Menu item label. If not specified, the command label will be used instead.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="submenu" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> submenu</h3>
+					<div class="tsd-signature tsd-kind-icon">submenu<span class="tsd-signature-symbol">:</span> <a href="MenuItem.html" class="tsd-signature-type" data-tsd-kind="Interface">MenuItem</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/rxliuli/joplin-utils/blob/24b8159/libs/joplin-plugin-api/src/api/types.ts#L288">api/types.ts:288</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Menu items that should appear below this menu item. Allows creating a menu tree.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="../enums/AppType.html" class="tsd-kind-icon">App<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/ContentScriptType.html" class="tsd-kind-icon">Content<wbr>Script<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/FileSystemItem.html" class="tsd-kind-icon">File<wbr>System<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/ImportModuleOutputFormat.html" class="tsd-kind-icon">Import<wbr>Module<wbr>Output<wbr>Format</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/MenuItemLocation.html" class="tsd-kind-icon">Menu<wbr>Item<wbr>Location</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/SettingItemType.html" class="tsd-kind-icon">Setting<wbr>Item<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/SettingStorage.html" class="tsd-kind-icon">Setting<wbr>Storage</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/ToolbarButtonLocation.html" class="tsd-kind-icon">Toolbar<wbr>Button<wbr>Location</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ButtonSpec.html" class="tsd-kind-icon">Button<wbr>Spec</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="Command.html" class="tsd-kind-icon">Command</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ContentScriptContext.html" class="tsd-kind-icon">Content<wbr>Script<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="CreateMenuItemOptions.html" class="tsd-kind-icon">Create<wbr>Menu<wbr>Item<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="DialogResult.html" class="tsd-kind-icon">Dialog<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="Disposable.html" class="tsd-kind-icon">Disposable</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="EditorCommand.html" class="tsd-kind-icon">Editor<wbr>Command</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ExportContext.html" class="tsd-kind-icon">Export<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ExportModule.html" class="tsd-kind-icon">Export<wbr>Module</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ExportOptions.html" class="tsd-kind-icon">Export<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ImportContext.html" class="tsd-kind-icon">Import<wbr>Context</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="ImportModule.html" class="tsd-kind-icon">Import<wbr>Module</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
+						<a href="MenuItem.html" class="tsd-kind-icon">Menu<wbr>Item</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="MenuItem.html#accelerator" class="tsd-kind-icon">accelerator</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="MenuItem.html#commandName" class="tsd-kind-icon">command<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="MenuItem.html#label" class="tsd-kind-icon">label</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="MenuItem.html#submenu" class="tsd-kind-icon">submenu</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface">
+						<a href="Script.html" class="tsd-kind-icon">Script</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="SettingItem.html" class="tsd-kind-icon">Setting<wbr>Item</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="SettingSection.html" class="tsd-kind-icon">Setting<wbr>Section</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../modules.html#ButtonId" class="tsd-kind-icon">Button<wbr>Id</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../modules.html#Path" class="tsd-kind-icon">Path</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../modules.html#PostMessageHandler" class="tsd-kind-icon">Post<wbr>Message<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="../modules.html#ViewHandle" class="tsd-kind-icon">View<wbr>Handle</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="../modules.html#default" class="tsd-kind-icon">default</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../modules.html#isContextMenuItemLocation" class="tsd-kind-icon">is<wbr>Context<wbr>Menu<wbr>Item<wbr>Location</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

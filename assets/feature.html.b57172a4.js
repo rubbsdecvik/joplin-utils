@@ -1,0 +1,1 @@
+const e={key:"v-0b89b960",path:"/zh/joplin-batch-web/feature.html",title:"其他功能",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[{level:2,title:"转换外部链接为内部笔记引用",slug:"转换外部链接为内部笔记引用",children:[]}],filePathRelative:"zh/joplin-batch-web/feature.md",git:{updatedTime:1630694243e3,contributors:[{name:"rxliuli",email:"rxliuli@gmail.com",commits:1}]}};export{e as data};

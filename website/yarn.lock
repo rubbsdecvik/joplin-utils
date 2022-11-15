@@ -2515,9 +2515,9 @@ fsevents@~2.3.2:
   linkType: hard
 
 "prismjs@npm:^1.24.1":
-  version: 1.24.1
-  resolution: "prismjs@npm:1.24.1"
-  checksum: fb2f4f7ad359729d083056e603501d5f13932c74550c0b8b5ec034a4bb78c632a90ae69134369f749a2fa8eb646317f65b37d5000c814e9bea4373dfb06580ff
+  version: 1.29.0
+  resolution: "prismjs@npm:1.29.0"
+  checksum: d906c4c4d01b446db549b4f57f72d5d7e6ccaca04ecc670fb85cea4d4b1acc1283e945a9cbc3d81819084a699b382f970e02f9d1378e14af9808d366d9ed7ec6
   languageName: node
   linkType: hard
 

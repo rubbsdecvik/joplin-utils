@@ -13284,7 +13284,7 @@ fsevents@^1.2.7:
     i18next: ^19.8.4
     jest: ^26.6.3
     joplin-api: ^0.3.0
-    luxon: ^1.25.0
+    luxon: ^2.5.2
     mdast: ^3.0.0
     ora: ^5.4.0
     os-locale: ^5.0.0
@@ -14207,6 +14207,13 @@ fsevents@^1.2.7:
   version: 1.28.0
   resolution: "luxon@npm:1.28.0"
   checksum: 26654cccad3eee5a908f6d609dcc7578ac7c5df6906ab578762cddde71e05e806e892dbf690e06c397dda2b2fd2d3bb3e33ce36cce61b4099ad621d80614e02a
+  languageName: node
+  linkType: hard
+
+"luxon@npm:^2.5.2":
+  version: 2.5.2
+  resolution: "luxon@npm:2.5.2"
+  checksum: c93b71c4ae74c440982f39832159b9311eca6db1e55d032d30a3f9354e6ceb16d576158c5dc9f847eb15c481557063bd61defdb96ee0953f8df2c57cd91e0b13
   languageName: node
   linkType: hard
 
